@@ -1,0 +1,7 @@
+Pour installer le node modul 'npm install'
+Rum  le projet ' npm rum start '
+Git commande : 
+git init 
+git add . 
+git commit -m "first commit" 
+git remote add origin lien de votre repo git'git push -u origin main ou master
