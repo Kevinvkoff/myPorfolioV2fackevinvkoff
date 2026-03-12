@@ -1,20 +1,215 @@
-<!doctype html>
-        <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>myPorfolioV2fackevinvkoff</title>
-            <link rel="stylesheet" href="css/output.css">
-        </head>
-        <body class="p-4 h-screen flex items-center justify-center">
-    <main class="container mx-auto px-4 flex flex-col items-center gap-4">
-      <p class="text-center bg-blue-600/10 text-sm p-1 px-3 rounded-full text-blue-600">Template Rtpa simple html for myPorfolioV2fackevinvkoff</p>
-      <h1 class="text-center text-3xl lg:text-5xl font-bold lg:w-[60%]">
-         Focus on shipping what matter the most. Happy coding to you mate.
-      </h1>
-      <p class="text-zinc-500">
-        Hi ce kevin
-      </p>
-    </main>
-        </body>
-        </html>
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevin VK OFF | Backend Developer</title>
+    <link rel="stylesheet" href="css/output.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-text {
+            background: linear-gradient(90deg, #7C3AED, #A78BFA);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        #mobile-menu.open {
+            display: flex !important;
+        }
+    </style>
+</head>
+<body class="bg-[#F9FAFB] text-slate-900 overflow-x-hidden">
+  <!-- menu -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="text-xl font-extrabold tracking-tighter uppercase">KEVIN<span class="text-purple-600 italic">CODE</span></a>
+            
+            <div class="hidden md:flex space-x-4 font-semibold text-sm">
+                <a href="#home" class="px-4 py-2 rounded-lg hover:bg-purple-600 hover:text-white transition-all">Accueil</a>
+                <a href="#about" class="px-4 py-2 rounded-lg hover:bg-purple-600 hover:text-white transition-all">À propos</a>
+                <a href="#experience" class="px-4 py-2 rounded-lg hover:bg-purple-600 hover:text-white transition-all">Expérience</a>
+                <a href="#projects" class="px-4 py-2 rounded-lg hover:bg-purple-600 hover:text-white transition-all">Projets</a>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <a href="https://github.com/Kevinvkoff" target="_blank" class="hidden md:flex items-center bg-black text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-gray-800 transition shadow-lg">
+                    <i class="fab fa-github mr-2 text-lg"></i> GitHub
+                </a>
+                
+                <button onclick="toggleMobileMenu()" class="md:hidden text-2xl text-slate-800 focus:outline-none">
+                    <i class="fas fa-bars" id="menu-icon"></i>
+                </button>
+            </div>
+        </div>
+        <!-- navBareMobile -->
+        <div id="mobile-menu" class="hidden fixed inset-0 mt-64  bg-white z-40 flex-col items-center justify-center space-y-4 md:hidden px-6 ">
+            <a href="#home" onclick="toggleMobileMenu()" class="bg-gray-50 px-8 py-4 rounded-2xl w-full max-w-xs text-center font-bold text-lg hover:bg-purple-600 hover:text-white transition-all border border-gray-100">Accueil</a>
+            <a href="#about" onclick="toggleMobileMenu()" class="bg-gray-50 px-8 py-4 rounded-2xl w-full max-w-xs text-center font-bold text-lg hover:bg-purple-600 hover:text-white transition-all border border-gray-100">À propos</a>
+            <a href="#experience" onclick="toggleMobileMenu()" class="bg-gray-50 px-8 py-4 rounded-2xl w-full max-w-xs text-center font-bold text-lg hover:bg-purple-600 hover:text-white transition-all border border-gray-100">Expérience</a>
+            <a href="#projects" onclick="toggleMobileMenu()" class="bg-gray-50 px-8 py-4 rounded-2xl w-full max-w-xs text-center font-bold text-lg hover:bg-purple-600 hover:text-white transition-all border border-gray-100">Projets</a>
+            
+            <a href="https://github.com/Kevinvkoff" target="_blank" class="flex items-center justify-center bg-black text-white px-8 py-4 rounded-2xl w-full max-w-xs font-bold text-lg hover:bg-gray-800 transition shadow-lg">
+                <i class="fab fa-github mr-3 text-xl"></i> GitHub
+            </a>
+        </div>
+    </nav>
+<!-- Accueil -->
+    <section id="home" class="pt-32 pb-16 px-6 min-h-screen flex items-center">
+        <div class="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-12">
+            <div class="w-full md:w-2/3 text-center md:text-left">
+                <p class="text-base md:text-lg font-medium text-purple-600 mb-2">Hé, je suis Kevin vk off</p>
+                <h1 class="text-4xl md:text-7xl font-extrabold leading-[1.1] mb-6 tracking-tight">
+                    Développeur <br class="hidden md:block">
+                    <span class="gradient-text text-5xl md:text-8xl">Backend Junior</span>
+                </h1>
+                <p class="text-gray-500 text-base md:text-lg mb-8 max-w-lg mx-auto md:mx-0 leading-relaxed">
+                    Développeur web <span class="font-bold text-slate-800 underline decoration-purple-300">Python & Django</span> et chercheur en intelligence artificielle depuis Lubumbashi.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="#projects" class="bg-black text-white px-8 py-4 rounded-2xl font-bold hover:shadow-xl transition-all text-center">Mes projets</a>
+                    <a href="#experience" class="bg-white border border-gray-200 px-8 py-4 rounded-2xl font-bold hover:bg-gray-50 transition-all text-center">Ma Stack</a>
+                </div>
+            </div>
+            
+            <div class="w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 flex-shrink-0">
+                <div class="relative w-full h-full rounded-full border-[8px] md:border-[12px] border-white shadow-2xl overflow-hidden bg-gradient-to-tr from-purple-100 to-white">
+                    <img src="src/images/moi.JPG" alt="Kevin VK OFF" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- A propos -->
+    <section id="about" class="py-24 bg-white px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-2xl md:text-3xl font-bold mb-10 flex items-center">
+                <span class="w-10 h-1 bg-purple-600 mr-4"></span>À propos
+            </h2>
+            <div class="grid lg:grid-cols-2 gap-12 items-start">
+                <div class="space-y-6">
+                    <p class="text-gray-600 text-lg leading-relaxed">
+                        Étudiant en <strong>Génie Logiciel & IA</strong> à l'UPL, je me passionne pour les coulisses du web. Chercheur en Intelligence Artificielle, je combine la rigueur du backend avec les innovations de l'IA.
+                    </p>
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        <div class="bg-[#F9FAFB] p-5 rounded-2xl border border-gray-50">
+                            <i class="fas fa-university text-purple-600 mb-3 text-xl"></i>
+                            <p class="font-bold text-sm uppercase tracking-wider">Université</p>
+                            <p class="text-gray-500 text-sm italic">UPL Lubumbashi</p>
+                        </div>
+                        <div class="bg-[#F9FAFB] p-5 rounded-2xl border border-gray-50">
+                            <i class="fas fa-code text-blue-600 mb-3 text-xl"></i>
+                            <p class="font-bold text-sm uppercase tracking-wider">Formation</p>
+                            <p class="text-gray-500 text-sm italic">OpenClassrooms / YouTube</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-purple-900 text-white p-8 md:p-10 rounded-[2rem] shadow-2xl rotate-1 md:rotate-2">
+                    <h3 class="text-2xl font-medium mb-4 leading-snug">"Le backend est le moteur invisible d'une expérience utilisateur réussie."</h3>
+                    <p class="text-purple-300 font-bold tracking-widest text-sm">— KEVIN VK OFF</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Experience -->
+    <section id="experience" class="py-24 px-6 bg-[#F9FAFB]">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-center text-3xl font-extrabold mb-16 underline decoration-purple-500 underline-offset-8">Stack & Environnement</h2>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-8 rounded-3xl border border-gray-100 hover:border-purple-200 transition">
+                    <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center text-purple-600 mb-6 font-bold text-xl text-center">01</div>
+                    <h3 class="font-bold text-xl mb-4">Backend & Data</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-gray-100 px-3 py-1 rounded-md text-sm font-semibold">Python (Django)</span>
+                        <span class="bg-gray-100 px-3 py-1 rounded-md text-sm font-semibold">MySQL</span>
+                        <span class="bg-gray-100 px-3 py-1 rounded-md text-sm font-semibold">MongoDB (notion)</span>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-3xl border border-gray-100 hover:border-blue-200 transition">
+                    <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600 mb-6 font-bold text-xl text-center">02</div>
+                    <h3 class="font-bold text-xl mb-4">Front & Design</h3>
+                    <div class="flex flex-wrap gap-2 text-sm font-semibold">
+                        <span class="bg-blue-50 text-blue-700 px-3 py-1 rounded-md">HTML / CSS / Tailwind / JS (notion)</span>
+                        <span class="bg-blue-50 text-blue-700 px-3 py-1 rounded-md">Vue.js (notion)</span>
+                        <span class="bg-pink-50 text-pink-700 px-3 py-1 rounded-md">Figma / Adobe XD</span>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-3xl border border-gray-100 hover:border-orange-200 transition sm:col-span-2 lg:col-span-1">
+                    <div class="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center text-orange-600 mb-6 font-bold text-xl text-center">03</div>
+                    <h3 class="font-bold text-xl mb-4">Éditeurs favoris</h3>
+                    <ul class="space-y-3 font-bold text-gray-700">
+                        <li class="flex items-center"><i class="fas fa-terminal mr-3 text-orange-400"></i> VS Code</li>
+                        <li class="flex items-center"><i class="fas fa-rocket mr-3 text-orange-400"></i> Antigravity</li>
+                        <li class="flex items-center"><i class="fas fa-brain mr-3 text-orange-400"></i> PyCharm</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- projet -->
+    <section id="projects" class="py-24 px-6 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12">Projets Sélectionnés</h2>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+              <!-- EaysBailGetion -->
+                <div class="group cursor-pointer">
+                    <div class="aspect-video bg-gray-200 rounded-2xl mb-4 overflow-hidden shadow-sm">
+                        <img src="https://via.placeholder.com/600x400" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                    </div>
+                    <h3 class="font-bold text-xl group-hover:text-purple-600 transition">SaaS EaysBailGestion</h3>
+                    <p class="text-gray-500 mb-2 text-sm font-medium">Projet en cours ...</p>
+                    <p class="text-gray-400 mb-4 text-xs">Django / PostgreSQL / API CinetPay</p>
+                    <a href="#" class="text-sm font-bold uppercase tracking-widest border-b-2 border-black pb-1 hover:text-purple-600 hover:border-purple-600 transition">Consulter</a>
+                </div>
+                <!-- porfolio -->
+                <div class="group cursor-pointer">
+                    <div class="aspect-video bg-gray-200 rounded-2xl mb-4 overflow-hidden shadow-sm">
+                        <img src="src/img/Capture d'écran 2026-03-12 145717.png" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                    </div>
+                    <h3 class="font-bold text-xl group-hover:text-purple-600 transition">Mon porfolioPrincipal</h3>
+                    <p class="text-gray-400 mb-4 text-xs">HTML / Tailwind css / JS</p>
+                    <a href="https://porfoliokevinvkoff.vercel.app/" class="text-sm font-bold uppercase tracking-widest border-b-2 border-black pb-1 hover:text-purple-600 hover:border-purple-600 transition">Consulter</a>
+                </div>
+                 <!-- Mon cycle -->
+                <div class="group cursor-pointer">
+                    <div class="aspect-video bg-gray-200 rounded-2xl mb-4 overflow-hidden shadow-sm">
+                        <img src="src/img/Moncycle.png" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                    </div>
+                    <h3 class="font-bold text-xl group-hover:text-purple-600 transition">Mon cycle</h3>
+                    <p class="text-gray-400 mb-4 text-xs">HTML / Tailwind css / JS</p>
+                    <a href="https://moncycle.vercel.app/" class="text-sm font-bold uppercase tracking-widest border-b-2 border-black pb-1 hover:text-purple-600 hover:border-purple-600 transition">Consulter</a>
+                </div>
+                </div>
+        </div>
+    </section>
+<!-- footer -->
+    <footer class="py-12 bg-[#F9FAFB] border-t border-gray-100 text-center md:text-left px-6">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <p class="text-gray-400 text-sm font-medium uppercase tracking-tighter">© 2026 KEVIN VK OFF</p>
+            <div class="flex space-x-8">
+                <a href="https://github.com/Kevinvkoff" class="text-gray-400 hover:text-purple-600 transition text-xl"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+logisue JS
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+
+        function toggleMobileMenu() {
+            mobileMenu.classList.toggle('open');
+            const isOpen = mobileMenu.classList.contains('open');
+            menuIcon.className = isOpen ? 'fas fa-times' : 'fas fa-bars';
+            document.body.style.overflow = isOpen ? 'hidden' : 'auto';
+        }
+
+        window.addEventListener('load', () => {
+            window.scrollTo(0, 0);
+        });
+
+        if (history.scrollRestoration) {
+            history.scrollRestoration = 'manual';
+        }
+    </script>
+</body>
+</html>
